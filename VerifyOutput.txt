@@ -13,26 +13,25 @@ possibleEvents
 		null_pdl
 		null_ddl
 	Vector #2
-		da
-		da1
-		da2
-		da3
+		nda
+		nda1
+		nda2
+		nda3
 		ndda2
 		ndda
 		DA
-		DC
+		PDA
 	Vector #3
-		ddl
-		ddl1
-		ddl2
+		nddl
+		nddl2
+		nddl1
 		ddl2_f
 		ddl1_f
 		nddl1_f
 		fddl
 	Vector #4
-		nddwa2
-		DA
-		DC
+		nigoff
+		igoff
 	Vector #5
 		ndsbs5
 		SBB
@@ -46,35 +45,33 @@ possibleEvents
 		s_fsreg1_t
 		c_fs1_t
 	Vector #8
-		pdl1
-		npdl1
-	Vector #9
-		DA
-		DC
-		DS
 		PS
+		DS
+		KWTMO
+		DDC
 		FR
 		nFR
-		LSTMO
-		PTMO
-		EFD2
-		nEFD2
-		MTMO
+		FSTMO
+		nEFD1
+		EFD1
+	Vector #9
+		ddwa2
+		nddwa2
 	Vector #10
-		DC
 		FR
 		nFR
 		TMO
+		DC
 	Vector #11
-		BON
 		DDC
-		SBP
 		SBB
+		BON
+		SBP
 	Vector #12
-		igoff
-		igoff2
-		igoff5
-		nIGOFF
+		nigoff
+		nigoff2
+		nigoff5
+		IGOFF
 	Vector #13
 		nkiv1
 		s_kiv1
@@ -92,23 +89,25 @@ possibleEvents
 		nda
 		nlkp3
 	Vector #17
+		TMO
 		s_lkps3_t
 	Vector #18
 		nlp1_t
 		s_lp3_t
 		c_lp1_t
 	Vector #19
+		npdl1
+		fpdl
 		pdl2_f
 		npdl1_f
 		pdl1_f
-		fddl
 	Vector #20
-		pp1
-		nPDS
+		npp1
+		DS
+		PS
 	Vector #21
-		retry1_t
 		s_retry1_t
-		RTMO
+		nretry1_t
 	Vector #22
 		nsbp2
 		nsbp5
@@ -389,7 +388,6 @@ eventSet
 		pdl2_f
 		npdl1_f
 		pdl1_f
-		fddl
 		pdl1
 		lad_pdl
 		uld_pdl
@@ -447,22 +445,23 @@ exploreEvents
 	null1
 	null_pdl
 	null_ddl
-	da
-	da1
-	da2
-	da3
+	nda
+	nda1
+	nda2
+	nda3
 	ndda2
 	ndda
 	DA
-	DC
-	ddl
-	ddl1
-	ddl2
+	PDA
+	nddl
+	nddl2
+	nddl1
 	ddl2_f
 	ddl1_f
 	nddl1_f
 	fddl
-	nddwa2
+	nigoff
+	igoff
 	ndsbs5
 	SBB
 	nfpr2
@@ -472,22 +471,21 @@ exploreEvents
 	s_fsext1_t
 	s_fsreg1_t
 	c_fs1_t
-	pdl1
-	npdl1
-	DS
 	PS
-	LSTMO
-	PTMO
-	EFD2
-	nEFD2
-	MTMO
-	TMO
+	DS
+	KWTMO
 	DDC
+	FSTMO
+	nEFD1
+	EFD1
+	ddwa2
+	nddwa2
+	TMO
+	DC
 	SBP
-	igoff
-	igoff2
-	igoff5
-	nIGOFF
+	nigoff2
+	nigoff5
+	IGOFF
 	nkiv1
 	s_kiv1
 	s_nkiv1
@@ -497,20 +495,20 @@ exploreEvents
 	s_kw1_t
 	s_kw2_t
 	s_kw3_t
-	nda
+	da
 	nlkp3
 	s_lkps3_t
 	nlp1_t
 	s_lp3_t
 	c_lp1_t
+	npdl1
+	fpdl
 	pdl2_f
 	npdl1_f
 	pdl1_f
-	pp1
-	nPDS
-	retry1_t
+	npp1
 	s_retry1_t
-	RTMO
+	nretry1_t
 	nsbp2
 	nsbp5
 	s_ula1_t

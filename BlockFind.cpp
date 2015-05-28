@@ -1,5 +1,7 @@
 /*	BlockFind
 *	-Finds all names of deadlock states
+*	-Use this program to only output deadlock states
+*	-If names and paths to deadlock states are required, use Tracer.cpp instead
 *
 *	Written for the UMDES TRW Project (2015)
 *	Austin Chen
@@ -17,7 +19,7 @@ using namespace std;
 
 //REQUIRES: cstring str
 //MODIFIES: n/a
-//EFFECTS: returns a boolean value whether or not a cstring is a valid integer
+//EFFECTS:	returns a boolean value whether or not a cstring is a valid integer
 bool is_num(char *str) {
 	while (*str)
 	{
@@ -62,7 +64,7 @@ int main(int argc, char* argv[])
 	
 
 
-	//find state with shortest string
+	//find deadlock states (states with no transitions)
 	cout<<"Finding deadlock states..."<<endl;
 	string name = "";	//stores name of state
 	string name_short = "";	//stores name of state with shortest string
@@ -120,7 +122,7 @@ int main(int argc, char* argv[])
 
 	cout<<"Outputting deadlock states to deadlock_states.txt..."<<endl;
 	ofstream outfile("deadlock_states.txt");
-	for(int i = 0; i < deadlock_states.size(); i++)
+	for(unsigned int i = 0; i < deadlock_states.size(); i++)
 	{
 		outfile << deadlock_states.at(i) << endl;
 	}

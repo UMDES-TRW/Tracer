@@ -79,7 +79,12 @@ int main(int argc, char* argv[])
 {
 	if(argc < 2)
 	{
-		cout<<"Not enough inputs. Exiting..."<<endl;
+		cout<<"Not enough inputs."<<endl;
+		cout<<"You must also have deadlock_target.txt and unproper.txt in the same directory."<<endl;
+		cout<<"Change deadlock_target.txt depending on which state you are checking."<<endl;
+		cout<<"Unproper contains the list of unproper states."<<endl;
+		cout<<"Usage: <executable> <raw FSM files>"<<endl;
+		cout<<"Exiting..."<<endl;
 		return 1;
 	}
 
@@ -200,7 +205,7 @@ int main(int argc, char* argv[])
 			possibleVector.assign(possibleVector.size(), false);
 			eventVector.assign(eventVector.size(), false);
 	}
-	cout<<"All events check, state is a deadlock!"<<endl;
+	cout<<"All events checked, state is a deadlock!"<<endl;
 	cout<<"Exiting..."<<endl;
 	return 0;
 }
