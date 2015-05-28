@@ -1,3 +1,14 @@
+/*	Verify
+*	-Verifies that a deadlock state is blocking
+*	-State to be tested is represented by "deadlock_target.txt"
+*	-Format is the individual state of each automaton in the composite state
+*	-Automata states are listed in the order they are input as arguments
+*
+*	Written for the UMDES TRW Project (2015)
+*	Austin Chen
+*/
+
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
