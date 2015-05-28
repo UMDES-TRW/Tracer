@@ -316,7 +316,7 @@ int main(int argc, char* argv[])
 	blocking_events.seekg(0, ios_base::beg);
 
 	//START TRACE
-	cout<<"Starting Trace..."<<endl<<endl;
+	cout<<"Starting Trace..."<<endl;
 	//find paths to deadlock states
 	fstream deadlocks("Tracer_deadlock_states.txt");
 	//Check if file has been opened
@@ -326,6 +326,7 @@ int main(int argc, char* argv[])
 		cout<<"Error: Can't open \"Tracer_deadlock_states.txt\". Exiting..."<<endl;
 		return 4;
 	}
+	cout<<endl;
 
 	string deadlockName;
 	vector<vector<string> > pathTransitions;	//paths to deadlock states
